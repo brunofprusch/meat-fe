@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { Restaurant } from 'app/restaurants/restaurant/restaurant.model';
 import { RestaurantsService } from 'app/restaurants/restaurants.service';
 import { ActivatedRoute } from '@angular/router';
-import { empty } from 'rxjs/Observer';
 
 @Component({
   selector: 'mt-restaurant-detail',
