@@ -5,7 +5,7 @@ import { MenuItem } from "../menu-item/menu-item.model";
 @Injectable()
 export class ShoppingCarService {
 
-    carItems: CarItem[]
+    carItems: CarItem[] = []
 
     clear() {
         this.carItems = []

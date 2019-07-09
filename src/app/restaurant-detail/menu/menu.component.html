@@ -3,10 +3,10 @@
   <mt-menu-item 
     *ngFor="let menuItem of menuItems" 
     [menuItem]="menuItem"
-    (add)=addMenuItem($event)>
+    (add)=shoppingCar.addItem($event)>
   </mt-menu-item>
 
 </div>
 <div class="col-md-3 col-xs-12">
-  <mt-shopping-car></mt-shopping-car>
+  <mt-shopping-car #shoppingCar></mt-shopping-car>
 </div>
