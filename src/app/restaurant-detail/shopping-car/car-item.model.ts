@@ -6,4 +6,12 @@ export class CarItem {
     value() {
         return this.menunItem.price * this.quantity;
     }
+
+    addQuantity() {
+        this.quantity++;
+    }
+
+    removeQuantity() {
+        this.quantity--;
+    }
 }

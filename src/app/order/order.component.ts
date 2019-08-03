@@ -14,11 +14,13 @@ export class OrderComponent implements OnInit {
     this.items = shoppingCarService.carItems
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
   removeItem(item: CarItem) {
     this.shoppingCarService.removeItem(item)
   }
 
+  total() {
+    return this.shoppingCarService.total();
+  }
 }
